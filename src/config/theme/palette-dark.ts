@@ -11,14 +11,15 @@ const paletteDark: CustomPaletteOptions = {
   mode: 'dark',
   background: {
     default: "#0000ff",
-    paper: '#222128',
+    paper: '#031C4D',
   },
   custom_background : {
     topBanner : '#143064',
+    estimate : '#142F63',
   },
   text: {
     primary: grey[100],
-    secondary: grey[200],
+    secondary: '#ffffff',
     disabled: grey[300],
   },
 }

@@ -17,7 +17,7 @@ const Navigation: FC = () => {
           component={Link}
           href={destination}
           key={destination}
-          target="_blank"
+          // target="_blank"
           sx={{
             position: 'relative',
             color: '#ffffff',
