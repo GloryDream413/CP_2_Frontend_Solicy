@@ -9,13 +9,14 @@ interface Props {
 const Logo: FC<Props> = ({ onClick, variant }) => {
   return (
     <Box onClick={onClick}>
-      <Typography
+      {/* <Typography
         variant="h4"
         component="h1"
         sx={{ fontWeight: 700, '& span': { color: variant === 'primary' ? 'primary.main' : 'unset' } }}
       >
         Course<span>space</span>
-      </Typography>
+      </Typography> */}
+      <img src = "/images/logo.svg" target = "_blank"></img>
     </Box>
   )
 }

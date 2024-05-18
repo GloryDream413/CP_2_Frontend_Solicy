@@ -14,7 +14,7 @@ const Header: FC = () => {
   const matchMobileView = useMediaQuery(breakpoints.down('md'))
 
   return (
-    <Box sx={{ backgroundColor: 'background.paper' }}>
+    <Box sx={{ backgroundColor: 'background.topBanner' }}>
       <Container sx={{ py: { xs: 2, md: 3 } }}>
         <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
           <Logo />
@@ -45,7 +45,7 @@ const Header: FC = () => {
           >
             <Box /> {/* Magic space */}
             <Navigation />
-            <AuthNavigation />
+            {/* <AuthNavigation /> */}
             {visibleMenu && matchMobileView && (
               <IconButton
                 sx={{

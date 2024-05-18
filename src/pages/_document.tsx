@@ -22,7 +22,7 @@ class MyDocument extends Document<DocumentProps> {
           <meta name="viewport" content="initial-scale=1, width=device-width" />
 
           {/* PWA primary color */}
-          <meta name="theme-color" content={theme.palette.background.paper} />
+          {/* <meta name="theme-color" content={theme.palette.background.paper} /> */}
 
           <meta content="#fbfbfb" name="theme-color" />
           <meta content="#fbfbfb" name="msapplication-navbutton-color" />

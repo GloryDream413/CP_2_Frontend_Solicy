@@ -7,7 +7,6 @@ const paletteDark: PaletteOptions = {
     default: "#0000ff",
     paper: '#222128',
     banner : '#143064',
-    toggle : '#ffffff',
   },
   text: {
     primary: grey[100],

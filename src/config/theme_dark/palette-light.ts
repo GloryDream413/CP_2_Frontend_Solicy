@@ -6,8 +6,7 @@ const palette: PaletteOptions = {
   background: {
     default: '#f2f5f5', //'#fdfdfd',
     paper: common.white,
-    topBanner : '#1551C2',
-    toggle : '#041D4C',
+    banner : '#1551C2',
   },
   text: {
     primary: grey[900],
