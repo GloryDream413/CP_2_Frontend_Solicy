@@ -50,7 +50,12 @@ const MUIProvider: FC<Props> = ({ children }) => {
           backgroundImage : 'url(https://ik.imagekit.io/2zlgs27bjo/public/icons/lamp-dark.svg)',
           backgroundSize : '50%',
           backgroundRepeat : 'no-repeat',
-          backgroundPosition : 'center'
+          backgroundPosition : 'center',
+          '&:hover' : {
+            transition: 'all 0.5s',
+            transform : 'scale(1.1)',
+            backgroundColor : isDarkMode ? '#ffffff' : '#041D4C',
+          }
         }}>
         {/* {isDarkMode ? 'Toggle Dark Mode' : 'Light Mode'} */}
       </Button>

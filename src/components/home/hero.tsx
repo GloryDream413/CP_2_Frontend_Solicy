@@ -44,20 +44,22 @@ const ExpItem: FC<ExpItemProps> = ({ item }) => {
   const { value, label } = item
   return (
     <>
-      <Box sx={{ width : '90%', textAlign: 'center', mb: { xs: 1, md: 0 } }} >
+      <Box sx={{ width: '90%', textAlign: 'center', mb: { xs: 1, md: 0 } }} >
         <Typography
-          sx={{ color: 'white', mb: { xs: 1, md: 2 }, fontSize: { xs: 34, md: 44 }, fontWeight: 'bold' }}
+          sx={{ color: 'white', mb: { xs: 1, md: 2 }, fontSize: { xs: 40, md: 54 }, fontWeight: 'bold' }}
         >
           {value}
         </Typography>
-        <Typography color="white" variant="h6">
+        <Typography color="white" variant="h5">
           {label}
         </Typography>
 
 
       </Box>
-      {label !== 'Ongoing Partners' ? <Divider orientation='vertical' sx={{marginLeft :'auto', marginRight : '10px'}}></Divider> : <></>}
-      
+      {label !== 'Ongoing Partners' ?
+        <Divider orientation='vertical' sx={{ marginLeft: 'auto', marginRight: '10px', background : 'white' }}></Divider>
+        : <></>}
+
     </>
   )
 }
@@ -65,7 +67,7 @@ const ExpItem: FC<ExpItemProps> = ({ item }) => {
 const HomeHero: FC = () => {
   return (
     <>
-      <Box id="hero" sx={{ backgroundColor: 'background.paper', position: 'relative', py: 16, pb: { xs: 16, md: 20 } }}>
+      <Box id="hero" sx={{ backgroundColor: 'background.paper', position: 'relative', pt: 24, pb:16, pb: { xs: 16, md: 20 } }}>
         <Container maxWidth="lg">
           <Grid container spacing={0} sx={{ flexDirection: { xs: 'column', md: 'unset' } }}>
             <Grid item xs={12} md={7}>
@@ -94,7 +96,7 @@ const HomeHero: FC = () => {
                   </Typography>
                 </Box>
                 <Box sx={{ mb: 4, width: { xs: '100%', md: '90%' } }}>
-                  <Typography sx={{ color: 'text.secondary', lineHeight: 1.6, fontSize: '24px'}}>
+                  <Typography sx={{ color: 'text.secondary', lineHeight: 1.6, fontSize: '24px' }}>
                     {
                       "We provide flexible and intuitive web3, software, and blockchain solutions"
                     }
@@ -105,6 +107,8 @@ const HomeHero: FC = () => {
                   <Button sx={{
                     background: 'primary.main',
                     borderRadius: '10px',
+                    height: '60px',
+                    boxShadow: '0px 3px gray',
                     '&:hover': {
                       backgroundColor: 'primary.main',
                       transform: 'scale(1.05)',
@@ -118,6 +122,8 @@ const HomeHero: FC = () => {
                   <Button sx={{
                     background: 'white',
                     borderRadius: '10px',
+                    height: '60px',
+                    boxShadow: '0px 3px gray',
                     '&:hover': {
                       color: 'primary.main',
                       transform: 'scale(1.05)',
@@ -148,7 +154,7 @@ const HomeHero: FC = () => {
       <Box sx={{
         boxShadow: 2,
         backgroundColor: 'custom_background.estimate',
-        py: 8
+        py: 12
       }}>
         <Grid container spacing={2}>
           {exps.map((item) => (

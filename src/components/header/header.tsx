@@ -14,7 +14,13 @@ const Header: FC = () => {
   const matchMobileView = useMediaQuery(breakpoints.down('md'))
 
   return (
-    <Box sx={{ backgroundColor: 'custom_background.topBanner' }}>
+    <Box sx={{
+      backgroundColor: 'custom_background.topBanner',
+      position : 'fixed',
+      top : '0px',
+      zIndex : '2000',
+      width : '100%'
+    }}>
       <Container sx={{ py: { xs: 2, md: 3 } }}>
         <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
           <Logo />
