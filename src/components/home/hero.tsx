@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Box from '@mui/material/Box'
 import Grid from '@mui/material/Grid'
 import Button from '@mui/material/Button'
+import Divider from '@mui/material/Divider'
 import Container from '@mui/material/Container'
 import Typography from '@mui/material/Typography'
 import { Link as ScrollLink } from 'react-scroll'
@@ -22,32 +23,42 @@ interface ExpItemProps {
 
 const exps: Array<Exp> = [
   {
-    label: 'Students',
-    value: '10K+',
+    label: 'Years in industry',
+    value: '2+',
   },
   {
-    label: 'Quality Course',
-    value: '20+',
+    label: 'Projects successfully done',
+    value: '100+',
   },
   {
-    label: 'Experience Mentors',
-    value: '10+',
+    label: 'Employees',
+    value: '70+',
+  },
+  {
+    label: 'Ongoing Partners',
+    value: '40+',
   },
 ]
 
 const ExpItem: FC<ExpItemProps> = ({ item }) => {
   const { value, label } = item
   return (
-    <Box sx={{ textAlign: 'center', mb: { xs: 1, md: 0 } }}>
-      <Typography
-        sx={{ color: 'secondary.main', mb: { xs: 1, md: 2 }, fontSize: { xs: 34, md: 44 }, fontWeight: 'bold' }}
-      >
-        {value}
-      </Typography>
-      <Typography color="text.secondary" variant="h5">
-        {label}
-      </Typography>
-    </Box>
+    <>
+      <Box sx={{ width : '90%', textAlign: 'center', mb: { xs: 1, md: 0 } }} >
+        <Typography
+          sx={{ color: 'white', mb: { xs: 1, md: 2 }, fontSize: { xs: 34, md: 44 }, fontWeight: 'bold' }}
+        >
+          {value}
+        </Typography>
+        <Typography color="white" variant="h6">
+          {label}
+        </Typography>
+
+
+      </Box>
+      {label !== 'Ongoing Partners' ? <Divider orientation='vertical' sx={{marginLeft :'auto', marginRight : '10px'}}></Divider> : <></>}
+      
+    </>
   )
 }
 
@@ -72,7 +83,7 @@ const HomeHero: FC = () => {
                     component="h2"
                     sx={{
                       position: 'relative',
-                      fontSize: { xs: 20, md: 36 },
+                      fontSize: { xs: 25, md: 45 },
                       letterSpacing: 1.5,
                       fontWeight: 'bold',
                       lineHeight: 1.3,
@@ -82,8 +93,8 @@ const HomeHero: FC = () => {
                     Fluent in Development
                   </Typography>
                 </Box>
-                <Box sx={{ mb: 4, width: { xs: '100%', md: '70%' } }}>
-                  <Typography sx={{ color: 'text.secondary', lineHeight: 1.6 , fontSize : '20px', wordWrap:'break-word'}}>
+                <Box sx={{ mb: 4, width: { xs: '100%', md: '90%' } }}>
+                  <Typography sx={{ color: 'text.secondary', lineHeight: 1.6, fontSize: '24px'}}>
                     {
                       "We provide flexible and intuitive web3, software, and blockchain solutions"
                     }
@@ -95,8 +106,8 @@ const HomeHero: FC = () => {
                     background: 'primary.main',
                     borderRadius: '10px',
                     '&:hover': {
-                      backgroundColor:'primary.main',
-                      transform:'scale(1.05)',
+                      backgroundColor: 'primary.main',
+                      transform: 'scale(1.05)',
                       transition: 'all 0.5s',
                     }
                   }}
@@ -108,8 +119,8 @@ const HomeHero: FC = () => {
                     background: 'white',
                     borderRadius: '10px',
                     '&:hover': {
-                      color:'white',
-                      transform:'scale(1.05)',
+                      color: 'primary.main',
+                      transform: 'scale(1.05)',
                       transition: 'all 0.5s',
                     }
                   }}
@@ -137,11 +148,11 @@ const HomeHero: FC = () => {
       <Box sx={{
         boxShadow: 2,
         backgroundColor: 'custom_background.estimate',
-        py : 8
+        py: 8
       }}>
         <Grid container spacing={2}>
           {exps.map((item) => (
-            <Grid key={item.value} item xs={12} md={4}>
+            <Grid container key={item.value} item xs={12} md={3} alignItems='center' justifyContent='center'>
               <ExpItem item={item} />
             </Grid>
           ))}
