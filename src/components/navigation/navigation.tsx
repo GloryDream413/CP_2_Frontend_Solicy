@@ -15,13 +15,9 @@ const Navigation: FC = () => {
       {navigations.map(({ path: destination, label }) => (
         <Box
           component={Link}
-          key={destination}
-          // activeClass="current"
-
           href={destination}
-          spy={true}
-          smooth={true}
-          duration={350}
+          key={destination}
+          target="_blank"
           sx={{
             position: 'relative',
             color: '#ffffff',

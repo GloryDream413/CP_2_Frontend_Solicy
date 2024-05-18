@@ -16,7 +16,9 @@ const Logo: FC<Props> = ({ onClick, variant }) => {
       >
         Course<span>space</span>
       </Typography> */}
-      <img src = "/images/logo.svg" target = "_blank"></img>
+      <a href = "/" target = "_blank">
+        <img src = "/images/logo.svg" ></img>
+      </a>
     </Box>
   )
 }

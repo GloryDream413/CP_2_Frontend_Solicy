@@ -1,11 +1,27 @@
+import { createTheme as createMuiTheme, Theme } from '@mui/material/styles'
+
+import typography from '@/config/theme/typography'
+import paletteBase from '@/config/theme/palette-base'
+import paletteLight from '@/config/theme/palette-light'
+import paletteDark from '@/config/theme/palette-dark'
+import shadows from '@/config/theme/shadows'
+
 import React, { FC, ReactNode, useState } from 'react'
 import { ThemeProvider } from '@mui/material'
 import Button from '@mui/material/Button'
 
-import theme from '@/config/theme'
+// default
+const createTheme = (darkMode?: boolean): Theme => {
+  const palette = darkMode ? { ...paletteBase, ...paletteDark } : { ...paletteBase, ...paletteLight }
+  return createMuiTheme({
+    palette,
+    typography,
+    shadows,
+  })
+}
 
-import lightTheme from '@/config/theme';
-import darkTheme from '@/config/theme_dark';
+const lightTheme = createTheme(false)
+const darkTheme = createTheme(true)
 
 interface Props {
   children: ReactNode
@@ -23,7 +39,7 @@ const MUIProvider: FC<Props> = ({ children }) => {
     <ThemeProvider theme={isDarkMode ? darkTheme : lightTheme}>
       <Button onClick={toggleTheme}
         sx = {{
-          position : 'absolute',
+          position : 'fixed',
           width : '60px',
           height : '60px',
           left : '24px',

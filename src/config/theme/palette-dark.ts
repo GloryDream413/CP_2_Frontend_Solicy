@@ -1,13 +1,20 @@
 import { PaletteOptions } from '@mui/material'
 import { grey } from '@mui/material/colors'
 
-const paletteDark: PaletteOptions = {
+interface CustomPaletteOptions extends PaletteOptions {
+  custom_background?: {
+    topBanner: string;
+  };
+}
+
+const paletteDark: CustomPaletteOptions = {
   mode: 'dark',
   background: {
     default: "#0000ff",
     paper: '#222128',
-    banner : '#143064',
-    toggle : '#ffffff',
+  },
+  custom_background : {
+    topBanner : '#143064',
   },
   text: {
     primary: grey[100],
