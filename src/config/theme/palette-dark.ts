@@ -4,6 +4,7 @@ import { grey } from '@mui/material/colors'
 interface CustomPaletteOptions extends PaletteOptions {
   custom_background?: {
     topBanner: string;
+    estimate: string;
   };
 }
 

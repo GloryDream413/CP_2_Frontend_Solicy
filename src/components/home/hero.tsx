@@ -67,7 +67,7 @@ const ExpItem: FC<ExpItemProps> = ({ item }) => {
 const HomeHero: FC = () => {
   return (
     <>
-      <Box id="hero" sx={{ backgroundColor: 'background.paper', position: 'relative', pt: 24, pb:16, pb: { xs: 16, md: 20 } }}>
+      <Box id="hero" sx={{ backgroundColor: 'background.paper', position: 'relative', pt: 24,  pb: { xs: 16, md: 20 } }}>
         <Container maxWidth="lg">
           <Grid container spacing={0} sx={{ flexDirection: { xs: 'column', md: 'unset' } }}>
             <Grid item xs={12} md={7}>
@@ -108,7 +108,6 @@ const HomeHero: FC = () => {
                     background: 'primary.main',
                     borderRadius: '10px',
                     height: '60px',
-                    boxShadow: '0px 3px gray',
                     '&:hover': {
                       backgroundColor: 'primary.main',
                       transform: 'scale(1.05)',
@@ -123,7 +122,7 @@ const HomeHero: FC = () => {
                     background: 'white',
                     borderRadius: '10px',
                     height: '60px',
-                    boxShadow: '0px 3px gray',
+                    boxShadow: '0px 1px gray',
                     '&:hover': {
                       color: 'primary.main',
                       transform: 'scale(1.05)',

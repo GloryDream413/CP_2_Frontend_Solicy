@@ -7,3 +7,8 @@ export interface Course {
   price: number
   category: string
 }
+
+export interface clientImg {
+  cover: string,
+  mode : string
+}

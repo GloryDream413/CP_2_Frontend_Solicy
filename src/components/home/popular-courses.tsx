@@ -1,4 +1,4 @@
-import React, { FC } from 'react'
+import React, { FC , useState, useEffect} from 'react'
 import Box from '@mui/material/Box'
 import Grid from '@mui/material/Grid'
 import Slider, { Settings } from 'react-slick'
@@ -9,8 +9,14 @@ import { IconButton, useMediaQuery } from '@mui/material'
 import IconArrowBack from '@mui/icons-material/ArrowBack'
 import IconArrowForward from '@mui/icons-material/ArrowForward'
 
+// import { useTheme as useNextTheme } from 'next-themes';
+
+
+import Image from 'next/image';
+
 import { data } from './popular-course.data'
 import { CourseCardItem } from '@/components/course'
+import { resolve } from 'path'
 
 interface SliderArrowArrow {
   onClick?: () => void
@@ -60,6 +66,18 @@ const StyledDots = styled('ul')(({ theme }) => ({
 
 const HomePopularCourse: FC = () => {
   const { breakpoints } = useTheme()
+
+  const [theme, setTheme] = useState('light');
+
+  useEffect(() => {
+    const storedTheme = localStorage.getItem('theme');
+    if (storedTheme) {
+      setTheme(storedTheme);
+      console.log("===>", storedTheme);
+    }
+  }, [])
+
+  
   const matchMobileView = useMediaQuery(breakpoints.down('md'))
 
   const sliderConfig: Settings = {
@@ -78,45 +96,36 @@ const HomePopularCourse: FC = () => {
   }
 
   return (
-    <Box
-      id="popular-course"
-      sx={{
-        pt: {
-          xs: 6,
-          md: 8,
-        },
-        pb: 14,
-        backgroundColor: 'background.default',
-      }}
-    >
-      <Container maxWidth="lg">
-        <Grid container spacing={2}>
-          <Grid item xs={12} md={3}>
-            <Box
-              sx={{
-                height: '100%',
-                width: { xs: '100%', md: '90%' },
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: { xs: 'center', md: 'flex-start' },
-              }}
-            >
-              <Typography variant="h1" sx={{ mt: { xs: 0, md: -5 }, fontSize: { xs: 30, md: 48 } }}>
-                Most Popular Courses
-              </Typography>
-            </Box>
-          </Grid>
+    <Grid container direction='column' sx={{ backgroundColor: 'background.paper' }}>
+      <Grid justifyContent='center'>
+        <Typography variant="h1" sx={{ textAlign : 'center', mt: 8, mb: 8, fontSize: { xs: 40, md: 72 } }}>
+          Our Clients
+        </Typography>
+      </Grid>
 
-          <Grid item xs={12} md={9}>
-            <Slider {...sliderConfig}>
-              {data.map((item) => (
-                <CourseCardItem key={String(item.id)} item={item} />
-              ))}
-            </Slider>
-          </Grid>
-        </Grid>
-      </Container>
-    </Box>
+      <Grid container justifyContent='center' alignItems='center' spacing={2}>
+        {data.map((item, index) =>
+
+          (localStorage.getItem('theme') == item.mode) && (
+            <Grid item xs={12} md={2} justifyContent='center' alignItems='center'
+              sx={{
+                cursor: 'pointer',
+                textAlign : 'center',
+                '&:hover' : {
+                  transform : 'scale(1.2)',
+                  transition : 'all 1s',
+                }
+              }}>
+              <Image
+                src={item.cover} width='100%' height='100%'></Image>
+            </Grid>
+          ))
+
+          
+        }
+      </Grid>
+
+    </Grid>
   )
 }
 
