@@ -7,6 +7,8 @@ interface CustomPaletteOptions extends PaletteOptions {
     estimate: string;
     ourserviceItem : string;
     ourserviceItemHover : string;
+    techstack : string;
+    joincommunity : string;
   };
 }
 
@@ -21,7 +23,8 @@ const palette: CustomPaletteOptions = {
     estimate : '#134EBC',
     ourserviceItem : '#ffffff',
     ourserviceItemHover : '#2064E3',
-
+    techstack : '#ffffff',
+    joincommunity : '#ffffff',
   },
   text: {
     primary: grey[900],

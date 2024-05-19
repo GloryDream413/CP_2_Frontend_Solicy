@@ -96,7 +96,7 @@ const HomePopularCourse: FC = () => {
   }
 
   return (
-    <Grid container direction='column' sx={{ backgroundColor: 'background.paper' }}>
+    <Grid container direction='column' sx={{ pb:16, backgroundColor: 'background.paper' }}>
       <Grid justifyContent='center'>
         <Typography variant="h1" sx={{ textAlign : 'center', mt: 8, mb: 8, fontSize: { xs: 40, md: 72 } }}>
           Our Clients

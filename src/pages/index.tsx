@@ -12,9 +12,16 @@ const DynamicHomePopularCourse = dynamic(() => import('../components/home/popula
 })
 
 const DynamicOurServices = dynamic(() => import('../components/home/ourservices'))
+
+const DynamicHomeTechStack = dynamic(() => import('../components/home/techstack'), {
+  ssr:false
+})
+
 const DynamicHomeTestimonial = dynamic(() => import('../components/home/testimonial'))
 const DynamicHomeOurMentors = dynamic(() => import('../components/home/mentors'))
 const DynamicHomeNewsLetter = dynamic(() => import('../components/home/newsletter'))
+
+const DynamicHomeJoinCommunity = dynamic(() => import('../components/home/joincommunity'))
 
 const Home: NextPageWithLayout = () => {
   return (
@@ -23,10 +30,12 @@ const Home: NextPageWithLayout = () => {
       <DynamicHomePopularCourse />
       <DynamicHomeFeature />
       <DynamicOurServices />
+      <DynamicHomeTechStack />
+      <DynamicHomeJoinCommunity />
 
-      <DynamicHomeTestimonial />
-      <DynamicHomeOurMentors />
-      <DynamicHomeNewsLetter />
+      {/* <DynamicHomeTestimonial />
+      <DynamicHomeOurMentors />*/}
+      <DynamicHomeNewsLetter /> 
     </>
   )
 }
