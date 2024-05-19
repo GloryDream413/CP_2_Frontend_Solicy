@@ -5,6 +5,8 @@ interface CustomPaletteOptions extends PaletteOptions {
   custom_background?: {
     topBanner: string;
     estimate: string;
+    ourserviceItem : string;
+    ourserviceItemHover : string;
   };
 }
 
@@ -17,6 +19,8 @@ const paletteDark: CustomPaletteOptions = {
   custom_background : {
     topBanner : '#143064',
     estimate : '#142F63',
+    ourserviceItem : '#142F63',
+    ourserviceItemHover : '#2E4E88',
   },
   text: {
     primary: grey[100],
