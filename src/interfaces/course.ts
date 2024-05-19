@@ -10,5 +10,5 @@ export interface Course {
 
 export interface clientImg {
   cover: string,
-  mode : string
+  myMode : string
 }

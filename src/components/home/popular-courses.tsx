@@ -69,13 +69,13 @@ const HomePopularCourse: FC = () => {
 
   const [theme, setTheme] = useState('light');
 
-  useEffect(() => {
-    const storedTheme = localStorage.getItem('theme');
-    if (storedTheme) {
-      setTheme(storedTheme);
-      console.log("===>", storedTheme);
-    }
-  }, [])
+  // useEffect(() => {
+  //   const storedTheme = localStorage.getItem('theme');
+  //   if (storedTheme) {
+  //     setTheme(storedTheme);
+  //     console.log("===>", storedTheme);
+  //   }
+  // }, [])
 
   
   const matchMobileView = useMediaQuery(breakpoints.down('md'))
@@ -106,7 +106,7 @@ const HomePopularCourse: FC = () => {
       <Grid container justifyContent='center' alignItems='center' spacing={2}>
         {data.map((item, index) =>
 
-          (localStorage.getItem('theme') == item.mode) && (
+          (localStorage && localStorage.getItem('theme') == item.myMode) && (
             <Grid item xs={12} md={2} justifyContent='center' alignItems='center'
               sx={{
                 cursor: 'pointer',
