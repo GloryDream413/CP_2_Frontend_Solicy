@@ -12,7 +12,7 @@ const Footer: FC = () => {
   return (
     <Box
       component="footer"
-      sx={{ backgroundColor: 'primary.main', py: { xs: 6, md: 10 }, color: 'primary.contrastText' }}
+      sx={{ backgroundColor: 'custom_background.topBanner', py: { xs: 6, md: 10 }, color: 'primary.contrastText' }}
     >
       <Container>
         <Grid container spacing={1}>
@@ -34,6 +34,9 @@ const Footer: FC = () => {
             </ScrollLink>
           </Grid>
         </Grid>
+        <Typography sx={{ textAlign: 'center', mt:4, letterSpacing : '2px' }}>
+          © 2024 Solicy LLC. All rights reserved
+        </Typography>
       </Container>
     </Box>
   )

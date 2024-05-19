@@ -127,7 +127,7 @@ const HomeGetInTouch: FC = () => {
 
               </Grid>
 
-              <Grid item xs={12} md={12} sx={{ mb: 2, fontSize: '40px' }}>
+              <Grid item xs={12} md={12} sx={{ mt: 4, mb: 2, fontSize: '40px' }}>
                 <Button sx={{
                   borderRadius: '4px',
                   border: '1px solid gray',

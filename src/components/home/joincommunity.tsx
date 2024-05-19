@@ -29,9 +29,8 @@ import { resolve } from 'path'
 
 const HomePopularCourse: FC = () => {
 
-
   return (
-    <Grid container direction='column' sx={{ pb:8, backgroundColor: 'custom_background.ourserviceItem' }}>
+    <Grid container direction='column' sx={{ pb:8, pt:8, backgroundColor: 'custom_background.ourserviceItem' }}>
       <Grid justifyContent='center'>
         <Typography variant="h1" sx={{ textAlign: 'center', mb: 8, fontSize: { xs: 30, md: 50 } }}>
           Join Community

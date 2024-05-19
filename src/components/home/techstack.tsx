@@ -88,7 +88,7 @@ const HomeTechStack: FC = () => {
   }
 
   return (
-    <Grid container direction='column' sx={{ pb: 16, backgroundColor: 'custom_background.ourserviceItem' }}>
+    <Grid container direction='column' sx={{ pb:2, backgroundColor: 'custom_background.ourserviceItem' }}>
       <Grid justifyContent='center'>
         <Typography variant="h1" sx={{ textAlign: 'center', mt: 8, fontSize: { xs: 40, md: 72 } }}>
           Tech Stack
