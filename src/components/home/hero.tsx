@@ -13,6 +13,7 @@ import PlayArrowIcon from '@mui/icons-material/PlayArrow'
 import TelegramIcon from '@mui/icons-material/Telegram';
 import PhoneIcon from '@mui/icons-material/Phone';
 
+
 interface Exp {
   label: string
   value: string
@@ -57,7 +58,7 @@ const ExpItem: FC<ExpItemProps> = ({ item }) => {
 
       </Box>
       {label !== 'Ongoing Partners' ?
-        <Divider orientation='vertical' sx={{ marginLeft: 'auto', marginRight: '10px', background : 'white' }}></Divider>
+        <Divider orientation='vertical' sx={{ marginLeft: 'auto', marginRight: '10px', background: 'white' }}></Divider>
         : <></>}
 
     </>
@@ -67,7 +68,7 @@ const ExpItem: FC<ExpItemProps> = ({ item }) => {
 const HomeHero: FC = () => {
   return (
     <>
-      <Box id="hero" sx={{ backgroundColor: 'background.paper', position: 'relative', pt: 24,  pb: { xs: 16, md: 20 } }}>
+      <Box id="hero" sx={{ backgroundColor: 'background.paper', position: 'relative', pt: 24, pb: { xs: 16, md: 20 } }}>
         <Container maxWidth="lg">
           <Grid container spacing={0} sx={{ flexDirection: { xs: 'column', md: 'unset' } }}>
             <Grid item xs={12} md={7}>
@@ -103,20 +104,22 @@ const HomeHero: FC = () => {
                   </Typography>
                 </Box>
                 <Box sx={{ '& button': { mr: 2 } }}>
+                  <ScrollLink to="id_touch" spy={true} smooth={true} offset={0} duration={350}>
 
-                  <Button sx={{
-                    background: 'primary.main',
-                    borderRadius: '10px',
-                    height: '60px',
-                    '&:hover': {
-                      backgroundColor: 'primary.main',
-                      transform: 'scale(1.05)',
-                      transition: 'all 0.5s',
-                    }
-                  }}
-                    size="large" variant="contained" startIcon={<TelegramIcon />}>
-                    Get in touch
-                  </Button>
+                    <Button sx={{
+                      background: 'primary.main',
+                      borderRadius: '10px',
+                      height: '60px',
+                      '&:hover': {
+                        backgroundColor: 'primary.main',
+                        transform: 'scale(1.05)',
+                        transition: 'all 0.5s',
+                      }
+                    }}
+                      size="large" variant="contained" startIcon={<TelegramIcon />}>
+                      Get in touch
+                    </Button>
+                  </ScrollLink>
 
                   <Button sx={{
                     background: 'white',

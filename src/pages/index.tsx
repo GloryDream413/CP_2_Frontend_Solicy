@@ -22,6 +22,7 @@ const DynamicHomeOurMentors = dynamic(() => import('../components/home/mentors')
 const DynamicHomeNewsLetter = dynamic(() => import('../components/home/newsletter'))
 
 const DynamicHomeJoinCommunity = dynamic(() => import('../components/home/joincommunity'))
+const DynamicHomeGetInTouch = dynamic(() => import('../components/home/getintouch'))
 
 const Home: NextPageWithLayout = () => {
   return (
@@ -32,10 +33,11 @@ const Home: NextPageWithLayout = () => {
       <DynamicOurServices />
       <DynamicHomeTechStack />
       <DynamicHomeJoinCommunity />
+      <DynamicHomeGetInTouch />
 
       {/* <DynamicHomeTestimonial />
       <DynamicHomeOurMentors />*/}
-      <DynamicHomeNewsLetter /> 
+      {/* <DynamicHomeNewsLetter />  */}
     </>
   )
 }
