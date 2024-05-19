@@ -11,45 +11,46 @@ const Navigation: FC = () => {
   const currentPath = router.pathname;
 
   return (
-    <Box sx={{ display: 'flex', flexDirection: { xs: 'column', md: 'row' } }}>
-      {navigations.map(({ path: destination, label }) => (
-        <Box
-          component={Link}
-          href={destination}
-          key={destination}
-          // target="_blank"
-          sx={{
-            position: 'relative',
-            color: '#ffffff',
-            cursor: 'pointer',
-            fontWeight: 600,
-            display: 'inline-flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            px: { xs: 0, md: 3 },
-            mb: { xs: 3, md: 0 },
-            textDecoration: 'none',
-            fontSize: { xs: '1.2rem', md: 'inherit' },
-            ...(destination === currentPath && {
-              textDecoration: 'underline',
-              textUnderlineOffset: '10px',
-            }),
+    <div id='id_top'>
+      <Box sx={{ display: 'flex', flexDirection: { xs: 'column', md: 'row' } }}>
+        {navigations.map(({ path: destination, label }) => (
+          <Box
+            component={Link}
+            href={destination}
+            key={destination}
+            // target="_blank"
+            sx={{
+              position: 'relative',
+              color: '#ffffff',
+              cursor: 'pointer',
+              fontWeight: 600,
+              display: 'inline-flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              px: { xs: 0, md: 3 },
+              mb: { xs: 3, md: 0 },
+              textDecoration: 'none',
+              fontSize: { xs: '1.2rem', md: 'inherit' },
+              ...(destination === currentPath && {
+                textDecoration: 'underline',
+                textUnderlineOffset: '10px',
+              }),
 
-            '& > div': { display: 'none' },
+              '& > div': { display: 'none' },
 
-            '&.current>div': { display: 'block' },
+              '&.current>div': { display: 'block' },
 
-            '&:hover': {
+              '&:hover': {
 
-              '&>div': {
-                display: 'block',
+                '&>div': {
+                  display: 'block',
+                },
+                textDecoration: 'underline',
+                textUnderlineOffset: '10px',
               },
-              textDecoration: 'underline',
-              textUnderlineOffset: '10px',
-            },
-          }}
-        >
-          {/* <Box
+            }}
+          >
+            {/* <Box
             sx={{
               position: 'absolute',
               top: 12,
@@ -60,10 +61,11 @@ const Navigation: FC = () => {
             <img src="/images/headline-curve.svg" alt="Headline curve" />
           </Box> */}
 
-          {label}
-        </Box>
-      ))}
-    </Box>
+            {label}
+          </Box>
+        ))}
+      </Box>
+    </div>
   )
 }
 

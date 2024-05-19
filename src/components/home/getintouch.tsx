@@ -185,8 +185,8 @@ const HomeGetInTouch: FC = () => {
                   transition: 'all 1s',
                 }
               }}>
-                <Box sx={{ m: '20px', width: '80px', height: '80px', borderRadius: '50%', border: '3px solid #0088CC', alignItems: 'center', justifyContent: 'center', display: 'flex' }}>
-                  <TelegramIcon sx={{ fontSize: '60px' }} color='primary'></TelegramIcon>
+                <Box sx={{ m: '20px', width: '70px', height: '70px', borderRadius: '50%', border: '3px solid #0088CC', alignItems: 'center', justifyContent: 'center', display: 'flex' }}>
+                  <TelegramIcon sx={{ fontSize: '50px' }} color='primary'></TelegramIcon>
                 </Box>
               </Grid>
 
@@ -197,8 +197,8 @@ const HomeGetInTouch: FC = () => {
                   transition: 'all 1s',
                 }
               }}>
-                <Box sx={{ m: '20px', width: '80px', height: '80px', borderRadius: '50%', border: '3px solid #25D366', alignItems: 'center', justifyContent: 'center', display: 'flex' }}>
-                  <SettingsPhoneIcon sx={{ fontSize: '50px' }} color='success'></SettingsPhoneIcon>
+                <Box sx={{ m: '20px', width: '70px', height: '70px', borderRadius: '50%', border: '3px solid #25D366', alignItems: 'center', justifyContent: 'center', display: 'flex' }}>
+                  <SettingsPhoneIcon sx={{ fontSize: '40px' }} color='success'></SettingsPhoneIcon>
                 </Box>
               </Grid>
 

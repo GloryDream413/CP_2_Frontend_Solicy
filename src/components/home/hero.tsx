@@ -104,7 +104,7 @@ const HomeHero: FC = () => {
                   </Typography>
                 </Box>
                 <Box sx={{ '& button': { mr: 2 } }}>
-                  <ScrollLink to="id_touch" spy={true} smooth={true} offset={0} duration={350}>
+                  <ScrollLink to="id_touch" spy={true} smooth={true} offset={-150} duration={350}>
 
                     <Button sx={{
                       background: 'primary.main',
