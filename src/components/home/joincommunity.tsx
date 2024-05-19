@@ -60,10 +60,13 @@ const HomePopularCourse: FC = () => {
             <Grid item xs={12} md={6}  sx = {{mb:4}}>
               <Button sx={{
                 borderRadius: '4px',
-                boxShadow: '0px 1px gray',
+                border : '1px solid gray',
+                
                 width: '80%',
                 '&:hover': {
                   backgroundColor: '#3FA9F5',
+                  boxShadow : '1px 0px gray',
+                  color : 'white',
                 },
                 letterSpacing: '3px',
                 fontWeight: 'bold',
@@ -82,10 +85,13 @@ const HomePopularCourse: FC = () => {
             <Grid item xs={12} md={6}  sx = {{mb:4}}>
               <Button sx={{
                 borderRadius: '4px',
-                boxShadow: '0px 1px gray',
+                border : '1px solid gray',
+                
                 width: '80%',
                 '&:hover': {
                   backgroundColor: '#0077B7',
+                  boxShadow : '1px 0px gray',
+                  color : 'white',
                 },
                 letterSpacing: '3px',
                 fontWeight: 'bold',
@@ -105,10 +111,13 @@ const HomePopularCourse: FC = () => {
             <Grid item xs={12} md={6}  sx = {{mb:4}}>
               <Button sx={{
                 borderRadius: '4px',
-                boxShadow: '0px 1px gray',
+                border : '1px solid gray',
+                
                 width: '80%',
                 '&:hover': {
                   backgroundColor: '#5865F2',
+                  boxShadow : '1px 0px gray',
+                  color : 'white',
                 },
                 letterSpacing: '3px',
                 fontWeight: 'bold',
@@ -128,10 +137,13 @@ const HomePopularCourse: FC = () => {
             <Grid item xs={12} md={6}  sx = {{mb:4}}>
               <Button sx={{
                 borderRadius: '4px',
-                boxShadow: '0px 1px gray',
+                border : '1px solid gray',
+                
                 width: '80%',
                 '&:hover': {
                   backgroundColor: '#000000',
+                  boxShadow : '1px 0px gray',
+                  color : 'white',
                 },
                 letterSpacing: '3px',
                 fontWeight: 'bold',
@@ -151,10 +163,13 @@ const HomePopularCourse: FC = () => {
             <Grid item xs={12} md={6}  sx = {{mb:4}}>
               <Button sx={{
                 borderRadius: '4px',
-                boxShadow: '0px 1px gray',
+                border : '1px solid gray',
+                
                 width: '80%',
                 '&:hover': {
                   background: 'linear-gradient(90deg,#7224c3 -2.03%,#c3246d 45.08%,#dc8d40 94.2%)',
+                  boxShadow : '1px 0px gray',
+                  color : 'white',
                 },
                 letterSpacing: '3px',
                 fontWeight: 'bold',
@@ -174,10 +189,13 @@ const HomePopularCourse: FC = () => {
             <Grid item xs={12} md={6}  sx = {{mb:4}}>
               <Button sx={{
                 borderRadius: '4px',
-                boxShadow: '0px 1px gray',
+                border : '1px solid gray',
+                
                 width: '80%',
                 '&:hover': {
                   backgroundColor: '#F61C0D',
+                  boxShadow : '1px 0px gray',
+                  color : 'white',
                 },
                 letterSpacing: '3px',
                 fontWeight: 'bold',
@@ -197,10 +215,13 @@ const HomePopularCourse: FC = () => {
             <Grid item xs={12} md={6}  sx = {{mb:4}}>
               <Button sx={{
                 borderRadius: '4px',
-                boxShadow: '0px 1px gray',
+                border : '1px solid gray',
+                
                 width: '80%',
                 '&:hover': {
                   backgroundColor: '#000000',
+                  boxShadow : '1px 0px gray',
+                  color : 'white',
                 },
                 letterSpacing: '3px',
                 fontWeight: 'bold',
@@ -220,10 +241,13 @@ const HomePopularCourse: FC = () => {
             <Grid item xs={12} md={6}  sx = {{mb:4}}>
               <Button sx={{
                 borderRadius: '4px',
-                boxShadow: '0px 1px gray',
+                border : '1px solid gray',
+                
                 width: '80%',
                 '&:hover': {
                   backgroundColor: '#0077B7',
+                  boxShadow : '1px 0px gray',
+                  color : 'white',
                 },
                 letterSpacing: '3px',
                 fontWeight: 'bold',
