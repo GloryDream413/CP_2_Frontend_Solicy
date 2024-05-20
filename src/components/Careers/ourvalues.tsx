@@ -235,10 +235,6 @@ const HomeOurValues: FC = () => {
           </Grid>
         </Grid>
 
-        d
-
-
-
       </Grid>
     </Grid>
   )
