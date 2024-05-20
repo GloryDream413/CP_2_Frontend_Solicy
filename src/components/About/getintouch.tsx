@@ -32,15 +32,14 @@ import SettingsPhoneIcon from '@mui/icons-material/SettingsPhone';
 
 import Image from 'next/image';
 
-import { data } from './popular-course.data'
 import { CourseCardItem } from '@/components/course'
 import { resolve } from 'path'
 
 import MyBot from '@/components/botChecker'
 
 
-const HomeGetInTouch: FC = () => {
 
+const HomeGetInTouch: FC = () => {
 
   return (
     <div id="id_touch">
