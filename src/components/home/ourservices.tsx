@@ -37,7 +37,7 @@ const HomePopularCourse: FC = () => {
             borderRadius: '20px',
             positino: 'relative',
             '&:hover': {
-              pointer: 'cursor',
+              cursor: 'pointer',
               backgroundColor: 'custom_background.ourserviceItemHover',
             }
           }}>
@@ -62,7 +62,7 @@ const HomePopularCourse: FC = () => {
             borderRadius: '20px',
             positino: 'relative',
             '&:hover': {
-              pointer: 'cursor',
+              cursor: 'pointer',
               backgroundColor: 'custom_background.ourserviceItemHover',
             }
           }}>

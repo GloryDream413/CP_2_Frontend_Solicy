@@ -3,7 +3,7 @@ import dynamic from 'next/dynamic'
 import { NextPageWithLayout } from '@/interfaces/layout'
 import { MainLayout } from '@/components/layout'
 
-const DynamicHomeJoinCommunity = dynamic(() => import('@/components/home/joincommunity'))
+const DynamicHomeJoinCommunity = dynamic(() => import('@/components/home/joincommunity_contact'))
 const DynamicHomeGetInTouch = dynamic(() => import('@/components/home/getintouch'))
 
 const Home: NextPageWithLayout = () => {

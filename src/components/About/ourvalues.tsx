@@ -32,7 +32,7 @@ const HomeOurValues: FC = () => {
             minHeight: '350px',
             backgroundColor: 'custom_background.ourserviceItem',
             '&:hover': {
-              pointer: 'cursor',
+              cursor: 'pointer',
               // backgroundColor: 'custom_background.ourserviceItemHover',
               backgroundImage: 'url(https://ik.imagekit.io/2zlgs27bjo/public/image/our-service-light-new.webp)',
               backgroundSize: '100% 100%',
@@ -73,7 +73,7 @@ const HomeOurValues: FC = () => {
             minHeight: '350px',
             backgroundColor: 'custom_background.ourserviceItem',
             '&:hover': {
-              pointer: 'cursor',
+              cursor: 'pointer',
               // backgroundColor: 'custom_background.ourserviceItemHover',
               backgroundImage: 'url(https://ik.imagekit.io/2zlgs27bjo/public/image/our-service-light-new.webp)',
               backgroundSize: '100% 100%',
@@ -113,7 +113,7 @@ const HomeOurValues: FC = () => {
             minHeight: '350px',
             backgroundColor: 'custom_background.ourserviceItem',
             '&:hover': {
-              pointer: 'cursor',
+              cursor: 'pointer',
               // backgroundColor: 'custom_background.ourserviceItemHover',
               backgroundImage: 'url(https://ik.imagekit.io/2zlgs27bjo/public/image/our-service-light-new.webp)',
               backgroundSize: '100% 100%',
@@ -153,7 +153,7 @@ const HomeOurValues: FC = () => {
             minHeight: '350px',
             backgroundColor: 'custom_background.ourserviceItem',
             '&:hover': {
-              pointer: 'cursor',
+              cursor: 'pointer',
               // backgroundColor: 'custom_background.ourserviceItemHover',
               backgroundImage: 'url(https://ik.imagekit.io/2zlgs27bjo/public/image/our-service-light-new.webp)',
               backgroundSize: '100% 100%',
@@ -194,7 +194,7 @@ const HomeOurValues: FC = () => {
             minHeight: '350px',
             backgroundColor: 'custom_background.ourserviceItem',
             '&:hover': {
-              pointer: 'cursor',
+              cursor: 'pointer',
               // backgroundColor: 'custom_background.ourserviceItemHover',
               backgroundImage: 'url(https://ik.imagekit.io/2zlgs27bjo/public/image/our-service-light-new.webp)',
               backgroundSize: '100% 100%',
@@ -235,7 +235,7 @@ const HomeOurValues: FC = () => {
             minHeight: '350px',
             backgroundColor: 'custom_background.ourserviceItem',
             '&:hover': {
-              pointer: 'cursor',
+              cursor: 'pointer',
               // backgroundColor: 'custom_background.ourserviceItemHover',
               backgroundImage: 'url(https://ik.imagekit.io/2zlgs27bjo/public/image/our-service-light-new.webp)',
               backgroundSize: '100% 100%',

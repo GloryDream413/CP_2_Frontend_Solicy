@@ -37,7 +37,7 @@ const HomeOurValues: FC = () => {
             width: '40%',
             backgroundColor: 'custom_background.ourserviceItem',
             '&:hover': {
-              pointer: 'cursor',
+              cursor: 'pointer',
               backgroundImage: 'url(https://ik.imagekit.io/2zlgs27bjo/public/image/our-service-light-new.webp)',
               backgroundSize: '100% 100%',
               color: 'white'
@@ -59,7 +59,7 @@ const HomeOurValues: FC = () => {
             </Grid>
             <Grid item container justifyContent="flex-end">
               <Grid item>
-                <Typography variant="h5" sx={{ '&:hover': { pointer: 'cursor' }, textDecoration: 'underline', my: 1, fontWeight: '200', fontSize: { xs: 10, md: 14 } }}>
+                <Typography variant="h5" sx={{ '&:hover': { cursor: 'pointer' }, textDecoration: 'underline', my: 1, fontWeight: '200', fontSize: { xs: 10, md: 14 } }}>
                   Learn more ...
                 </Typography>
               </Grid>
@@ -71,7 +71,7 @@ const HomeOurValues: FC = () => {
             width: '40%',
             backgroundColor: 'custom_background.ourserviceItem',
             '&:hover': {
-              pointer: 'cursor',
+              cursor: 'pointer',
               backgroundImage: 'url(https://ik.imagekit.io/2zlgs27bjo/public/image/our-service-light-new.webp)',
               backgroundSize: '100% 100%',
               color: 'white'
@@ -93,7 +93,7 @@ const HomeOurValues: FC = () => {
             </Grid>
             <Grid item container justifyContent="flex-end">
               <Grid item>
-                <Typography variant="h5" sx={{ '&:hover': { pointer: 'cursor' }, textDecoration: 'underline', my: 1, fontWeight: '200', fontSize: { xs: 10, md: 14 } }}>
+                <Typography variant="h5" sx={{ '&:hover': { cursor: 'pointer' }, textDecoration: 'underline', my: 1, fontWeight: '200', fontSize: { xs: 10, md: 14 } }}>
                   Learn more ...
                 </Typography>
               </Grid>
@@ -105,7 +105,7 @@ const HomeOurValues: FC = () => {
             width: '40%',
             backgroundColor: 'custom_background.ourserviceItem',
             '&:hover': {
-              pointer: 'cursor',
+              cursor: 'pointer',
               backgroundImage: 'url(https://ik.imagekit.io/2zlgs27bjo/public/image/our-service-light-new.webp)',
               backgroundSize: '100% 100%',
               color: 'white'
@@ -127,7 +127,7 @@ const HomeOurValues: FC = () => {
             </Grid>
             <Grid item container justifyContent="flex-end">
               <Grid item>
-                <Typography variant="h5" sx={{ '&:hover': { pointer: 'cursor' }, textDecoration: 'underline', my: 1, fontWeight: '200', fontSize: { xs: 10, md: 14 } }}>
+                <Typography variant="h5" sx={{ '&:hover': { cursor: 'pointer' }, textDecoration: 'underline', my: 1, fontWeight: '200', fontSize: { xs: 10, md: 14 } }}>
                   Learn more ...
                 </Typography>
               </Grid>
@@ -139,7 +139,7 @@ const HomeOurValues: FC = () => {
             width: '40%',
             backgroundColor: 'custom_background.ourserviceItem',
             '&:hover': {
-              pointer: 'cursor',
+              cursor: 'pointer',
               backgroundImage: 'url(https://ik.imagekit.io/2zlgs27bjo/public/image/our-service-light-new.webp)',
               backgroundSize: '100% 100%',
               color: 'white'
@@ -161,7 +161,7 @@ const HomeOurValues: FC = () => {
             </Grid>
             <Grid item container justifyContent="flex-end">
               <Grid item>
-                <Typography variant="h5" sx={{ '&:hover': { pointer: 'cursor' }, textDecoration: 'underline', my: 1, fontWeight: '200', fontSize: { xs: 10, md: 14 } }}>
+                <Typography variant="h5" sx={{ '&:hover': { cursor: 'pointer' }, textDecoration: 'underline', my: 1, fontWeight: '200', fontSize: { xs: 10, md: 14 } }}>
                   Learn more ...
                 </Typography>
               </Grid>
@@ -173,7 +173,7 @@ const HomeOurValues: FC = () => {
             width: '40%',
             backgroundColor: 'custom_background.ourserviceItem',
             '&:hover': {
-              pointer: 'cursor',
+              cursor: 'pointer',
               backgroundImage: 'url(https://ik.imagekit.io/2zlgs27bjo/public/image/our-service-light-new.webp)',
               backgroundSize: '100% 100%',
               color: 'white'
@@ -195,7 +195,7 @@ const HomeOurValues: FC = () => {
             </Grid>
             <Grid item container justifyContent="flex-end">
               <Grid item>
-                <Typography variant="h5" sx={{ '&:hover': { pointer: 'cursor' }, textDecoration: 'underline', my: 1, fontWeight: '200', fontSize: { xs: 10, md: 14 } }}>
+                <Typography variant="h5" sx={{ '&:hover': { cursor: 'pointer' }, textDecoration: 'underline', my: 1, fontWeight: '200', fontSize: { xs: 10, md: 14 } }}>
                   Learn more ...
                 </Typography>
               </Grid>
@@ -207,7 +207,7 @@ const HomeOurValues: FC = () => {
             width: '40%',
             backgroundColor: 'custom_background.ourserviceItem',
             '&:hover': {
-              pointer: 'cursor',
+              cursor: 'pointer',
               backgroundImage: 'url(https://ik.imagekit.io/2zlgs27bjo/public/image/our-service-light-new.webp)',
               backgroundSize: '100% 100%',
               color: 'white'
@@ -229,7 +229,7 @@ const HomeOurValues: FC = () => {
             </Grid>
             <Grid item container justifyContent="flex-end">
               <Grid item>
-                <Typography variant="h5" sx={{ '&:hover': { pointer: 'cursor' }, textDecoration: 'underline', my: 1, fontWeight: '200', fontSize: { xs: 10, md: 14 } }}>
+                <Typography variant="h5" sx={{ '&:hover': { cursor: 'pointer' }, textDecoration: 'underline', my: 1, fontWeight: '200', fontSize: { xs: 10, md: 14 } }}>
                   Learn more ...
                 </Typography>
               </Grid>

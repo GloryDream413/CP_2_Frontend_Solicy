@@ -14,6 +14,7 @@ const MyVideo: React.FC<VideoProps> = ({ videoSrc, title, description }) => {
         <video
           src={videoSrc}
           controls
+          autoPlay
           style={{
             width: '100%',
             height : '620px',

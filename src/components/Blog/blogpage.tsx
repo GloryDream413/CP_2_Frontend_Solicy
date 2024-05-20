@@ -10,7 +10,7 @@ import Checkbox from '@mui/material/Checkbox'
 
 import TextField from '@mui/material/TextField'
 import { useTheme, styled } from '@mui/material/styles'
-import { IconButton, radioClasses, useMediaQuery } from '@mui/material'
+import { Divider, IconButton, radioClasses, useMediaQuery } from '@mui/material'
 import IconArrowBack from '@mui/icons-material/ArrowBack'
 import IconArrowForward from '@mui/icons-material/ArrowForward'
 
@@ -42,7 +42,7 @@ const HomeGetInTouch: FC = () => {
 
     return (
         <div id="id_touch">
-            <Grid container direction='column' sx={{ backgroundColor: 'background.paper', pb: 8 }}>
+            <Grid container direction='column' sx={{ backgroundColor: 'background.paper', pb: 8}}>
                 <Grid justifyContent='center'>
                     <Typography variant="h1" sx={{ textAlign: 'left', ml: 2, mt: 20, fontSize: { xs: 30, md: 50 } }}>
                         Lessons learned on our journey
@@ -76,7 +76,10 @@ const HomeGetInTouch: FC = () => {
                     </Grid>
                     <Grid item></Grid>
                 </Grid>
+
+                <Divider></Divider>
             </Grid>
+
         </div>
     )
 }

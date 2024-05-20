@@ -61,7 +61,7 @@ const OurWorks: FC = () => {
           >
           </Box>
         </Grid>
-        <Grid item container direction='column' xs={12} md={6} >
+        <Grid item container direction='column' xs={12} md={5} >
           <Grid item sx={{ mb: 2 }}>
             <Typography variant="h1" sx={{ textAlign: 'center', mb: 2, fontSize: { xs: 30, md: 50 } }}>
               YOUMEME

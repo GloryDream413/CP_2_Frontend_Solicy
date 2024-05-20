@@ -170,7 +170,7 @@ const HomeGetInTouch: FC = () => {
               <ContentCopyOutlinedIcon sx={{
                 width: '15px',
                 '&:hover': {
-                  pointer: 'cursor'
+                  cursor: 'pointer'
                 }
               }} />
             </Grid>
