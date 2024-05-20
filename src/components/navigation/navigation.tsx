@@ -48,6 +48,7 @@ const Navigation: FC = () => {
 
                 '& > div': { display: 'none' },
                 '&.current>div': { display: 'block' },
+
                 '&:hover': {
                   '&>div': {
                     display: 'block',
@@ -104,6 +105,7 @@ const Navigation: FC = () => {
                   },
                   textDecoration: 'underline',
                   textUnderlineOffset: '10px',
+                  transition : 'all 2s',
                 },
               }}
             >

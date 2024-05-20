@@ -84,7 +84,7 @@ const FooterNavigation: FC = () => {
     <Grid container spacing={2}>
       <Grid item xs={12} md={8}>
 
-        <Typography sx={{ fontSize: '24px', mb: 2 }}>
+        <Typography sx={{ fontSize: '28px', mb: 2 }}>
           What we Do ?
         </Typography>
 
@@ -99,7 +99,7 @@ const FooterNavigation: FC = () => {
       <Grid item xs={12} md={4}>
 
 
-        <Typography sx={{ fontSize: '24px', mb: 2 }}>
+        <Typography sx={{ fontSize: '28px', mb: 2 }}>
           Contact Us
         </Typography>
         <Grid container direction="row" alignItems='center'>

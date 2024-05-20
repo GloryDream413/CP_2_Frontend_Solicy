@@ -43,7 +43,7 @@ const HomeFeature: FC = () => {
         <Grid container spacing={3}>
           <Grid item xs={12} md={5}>
             <Box sx={{ position: 'relative' }}>
-              <Image src="/images/home-about.svg" width={650} height={678} quality={97} alt="Feature img" />
+              <Image src="/images/home-about.svg" width={650} height={600} quality={97} alt="Feature img" />
             </Box>
           </Grid>
           <Grid item xs={12} md={7}>
@@ -63,9 +63,10 @@ const HomeFeature: FC = () => {
               About Solicy
             </Typography>
 
-            <Typography sx={{ color: 'white', fontSize: '24px', mb: 2, ml: { xs: 0, md: 4 } }}>
+            <Typography sx={{ color: 'white', fontSize: '24px', mb: 4, ml: { xs: 0, md: 4 } }}>
               Solicy is a fast-growing company providing Blockchain and Software solutions to customers from around the globe. Due to the high demand for Blockchain development services in the market, we keep up with innovations and provide a wide range of services.
             </Typography>
+
             <Button sx={{
               background: 'white',
               borderRadius: '10px',
@@ -77,7 +78,8 @@ const HomeFeature: FC = () => {
                 background: 'white',
               },
               letterSpacing : '3px',
-              fontWeight : 'bold'
+              fontWeight : 'bold',
+              textTransform: 'none',
             }}
               size="large" variant="outlined" >
               See More

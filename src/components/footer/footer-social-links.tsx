@@ -97,11 +97,11 @@ const SocialLinks: FC = () => {
           listStyle: 'none',
         }}
       >
-        <TwitterIcon sx={{ mr: '20px' , '&:hover' : { cursor : 'pointer'} ,width : '32px', height : '32px', padding : '5px', background : 'white', borderRadius : '50%', m : '5px', color : 'black'}}></TwitterIcon>
-        <LinkedInIcon sx={{ mr: '20px' , '&:hover' : { cursor : 'pointer'} ,width : '32px', height : '32px', padding : '5px', background : 'white', borderRadius : '50%', m : '5px', color : 'black'}}></LinkedInIcon>
-        <SmartToyIcon sx={{ mr: '20px' , '&:hover' : { cursor : 'pointer'} ,width : '32px', height : '32px', padding : '5px', background : 'white', borderRadius : '50%', m : '5px', color : 'black'}}></SmartToyIcon>
-        <GitHubIcon sx={{ mr: '20px' , '&:hover' : { cursor : 'pointer'} ,width : '32px', height : '32px', padding : '5px', background : 'white', borderRadius : '50%', m : '5px', color : 'black'}}></GitHubIcon>
-        <InstagramIcon sx={{ mr: '20px' , '&:hover' : { cursor : 'pointer'} ,width : '32px', height : '32px', padding : '5px', background : 'white', borderRadius : '50%', m : '5px', color : 'black'}}></InstagramIcon>
+        <TwitterIcon sx={{  '&:hover': { cursor: 'pointer' }, width: '32px', height: '32px', padding: '5px', background: 'white', borderRadius: '50%', my: '8px', mx : '10px', color: 'black' }}></TwitterIcon>
+        <LinkedInIcon sx={{  '&:hover': { cursor: 'pointer' }, width: '32px', height: '32px', padding: '5px', background: 'white', borderRadius: '50%', my: '8px', mx : '10px', color: 'black' }}></LinkedInIcon>
+        <SmartToyIcon sx={{  '&:hover': { cursor: 'pointer' }, width: '32px', height: '32px', padding: '5px', background: 'white', borderRadius: '50%', my: '8px', mx : '10px', color: 'black' }}></SmartToyIcon>
+        <GitHubIcon sx={{  '&:hover': { cursor: 'pointer' }, width: '32px', height: '32px', padding: '5px', background: 'white', borderRadius: '50%', my: '8px', mx : '10px', color: 'black' }}></GitHubIcon>
+        <InstagramIcon sx={{  '&:hover': { cursor: 'pointer' }, width: '32px', height: '32px', padding: '5px', background: 'white', borderRadius: '50%', my: '8px', mx : '10px', color: 'black' }}></InstagramIcon>
       </Box>
       <Box
         component="ul"
@@ -113,11 +113,11 @@ const SocialLinks: FC = () => {
           listStyle: 'none',
         }}
       >
-        <YouTubeIcon sx={{ mr: '20px' , '&:hover' : { cursor : 'pointer'} ,width : '32px', height : '32px', padding : '5px', background : 'white', borderRadius : '50%', m : '5px', color : 'black'}}></YouTubeIcon>
-        <MusicNoteIcon sx={{ mr: '20px' , '&:hover' : { cursor : 'pointer'} ,width : '32px', height : '32px', padding : '5px', background : 'white', borderRadius : '50%', m : '5px', color : 'black'}}></MusicNoteIcon>
-        <FacebookIcon sx={{ mr: '20px' , '&:hover' : { cursor : 'pointer'} ,width : '32px', height : '32px', padding : '5px', background : 'white', borderRadius : '50%', m : '5px', color : 'black'}}></FacebookIcon>
-        <AccountBalanceIcon sx={{ mr: '20px' , '&:hover' : { cursor : 'pointer'} ,width : '32px', height : '32px', padding : '5px', background : 'white', borderRadius : '50%', m : '5px', color : 'black'}}></AccountBalanceIcon>
-        <BalconyIcon sx={{ mr: '20px' , '&:hover' : { cursor : 'pointer'} ,width : '32px', height : '32px', padding : '5px', background : 'white', borderRadius : '50%', m : '5px', color : 'black'}}></BalconyIcon>
+        <YouTubeIcon sx={{  '&:hover': { cursor: 'pointer' }, width: '32px', height: '32px', padding: '5px', background: 'white', borderRadius: '50%', my: '8px', mx : '10px', color: 'black' }}></YouTubeIcon>
+        <MusicNoteIcon sx={{  '&:hover': { cursor: 'pointer' }, width: '32px', height: '32px', padding: '5px', background: 'white', borderRadius: '50%', my: '8px', mx : '10px', color: 'black' }}></MusicNoteIcon>
+        <FacebookIcon sx={{  '&:hover': { cursor: 'pointer' }, width: '32px', height: '32px', padding: '5px', background: 'white', borderRadius: '50%', my: '8px', mx : '10px', color: 'black' }}></FacebookIcon>
+        <AccountBalanceIcon sx={{  '&:hover': { cursor: 'pointer' }, width: '32px', height: '32px', padding: '5px', background: 'white', borderRadius: '50%', my: '8px', mx : '10px', color: 'black' }}></AccountBalanceIcon>
+        <BalconyIcon sx={{  '&:hover': { cursor: 'pointer' }, width: '32px', height: '32px', padding: '5px', background: 'white', borderRadius: '50%', my: '8px', mx : '10px', color: 'black' }}></BalconyIcon>
       </Box>
     </Box>
   )

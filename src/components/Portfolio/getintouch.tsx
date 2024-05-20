@@ -136,7 +136,8 @@ const HomeGetInTouch: FC = () => {
                     boxShadow: '1px 0px gray',
                     color: 'white',
                   },
-                  letterSpacing: '10px',
+                  letterSpacing: '3px',
+                  textTransform: 'none',
                   fontWeight: 'bold',
                   backgroundColor: 'custom_background.joincommunity',
                   color: 'text.secondary',
@@ -160,7 +161,9 @@ const HomeGetInTouch: FC = () => {
             </Grid>
 
             <Grid container direction="row" alignItems='center' sx={{ mt: 8 }}>
-              <MailOutlineOutlinedIcon></MailOutlineOutlinedIcon>
+              <Box sx={{ width: '40px', height: '40px', borderRadius: '50%', border: '3px solid gray', alignItems: 'center', justifyContent: 'center', display: 'flex' }}>
+                <MailOutlineOutlinedIcon></MailOutlineOutlinedIcon>
+              </Box>
               <Typography sx={{ ml: 2, mr: 1, color: 'text.secondary', lineHeight: 1.6, fontSize: '18px', textDecoration: 'underline' }}>
                 contact@solicy.net
               </Typography>

@@ -18,7 +18,7 @@ const Footer: FC = () => {
         <Grid container spacing={1}>
           <Grid item xs={12} md={4}>
             <Box sx={{ width: { xs: '100%', md: 360 }, mb: { xs: 3, md: 0 } }}>
-              <Typography component="h2" variant="h2" sx={{ mb: 2 }}>
+              <Typography component="h2" variant="h2" sx={{ mb: 2 , }}>
                 <Logo></Logo>
               </Typography>
               <FooterSocialLinks />
@@ -34,7 +34,7 @@ const Footer: FC = () => {
             </ScrollLink>
           </Grid>
         </Grid>
-        <Typography sx={{ textAlign: 'center', mt:4, letterSpacing : '2px' }}>
+        <Typography sx={{ textAlign: 'center', mt:4, letterSpacing : '2px' , color : '#cfcfcf'}}>
           © 2024 Solicy LLC. All rights reserved
         </Typography>
       </Container>

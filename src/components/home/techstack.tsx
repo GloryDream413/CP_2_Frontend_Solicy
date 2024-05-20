@@ -88,7 +88,7 @@ const HomeTechStack: FC = () => {
   }
 
   return (
-    <Grid container direction='column' sx={{ pb:2, backgroundColor: 'custom_background.ourserviceItem' }}>
+    <Grid container direction='column' sx={{ pb: 2, backgroundColor: 'custom_background.ourserviceItem' }}>
       <Grid justifyContent='center'>
         <Typography variant="h1" sx={{ textAlign: 'center', mt: 8, fontSize: { xs: 40, md: 72 } }}>
           Tech Stack
@@ -100,7 +100,7 @@ const HomeTechStack: FC = () => {
         </Grid>
         <Grid container direction='column' sx={{ width: '80%' }}>
           <Grid item xs={12} md={10}>
-            <Typography variant="h1" sx={{ textAlign: 'left',ml : -1, mt: 8, mb: 8, fontSize: { xs: 30, md: 45 } }}>
+            <Typography variant="h1" sx={{ textAlign: 'left', ml: -1, mt: 8, mb: 8, fontSize: { xs: 30, md: 45 } }}>
               Blockchain
             </Typography>
 
@@ -108,13 +108,13 @@ const HomeTechStack: FC = () => {
               {data.map((item, index) =>
 
                 (localStorage && localStorage.getItem('theme') == item.myMode) && (
-                  <Grid item xs={12} md={3} spacing = {2} justifyContent='center' alignItems='center'
+                  <Grid item xs={12} md={3} spacing={2} justifyContent='center' alignItems='center'
                     sx={{
-                      padding : '0px',
+                      padding: '0px',
                       cursor: 'pointer',
                       textAlign: 'center',
-                      outline : '2px solid white',
-                      outlineOffset : '-10px',
+                      outline: '2px solid white',
+                      outlineOffset: '-10px',
                       '&:hover': {
                         transform: 'scale(1.05)',
                         transition: 'all 1s',
@@ -130,17 +130,19 @@ const HomeTechStack: FC = () => {
             <Button sx={{
               background: 'white',
               borderRadius: '10px',
-              width : '250px',
+              width: '250px',
               height: '60px',
               boxShadow: '0px 1px gray',
-              mt : 8,              
-              ml : -1,
+              mt: 8,
+              ml: -1,
               // '&:hover' : {
               //   background: 'white',
               // },
-              letterSpacing : '3px',
-              fontWeight : 'bold',
-              fontSize : '20px',
+              letterSpacing: '3px',
+              fontWeight: 'bold',
+              fontSize: '20px',
+              textTransform: 'none',
+
             }}
               size="large" variant="outlined" >
               See More
@@ -156,7 +158,7 @@ const HomeTechStack: FC = () => {
         </Grid>
         <Grid container direction='column' sx={{ width: '80%' }}>
           <Grid item xs={12} md={10}>
-            <Typography variant="h1" sx={{ textAlign: 'left',ml : -1, mt: 8, mb: 8, fontSize: { xs: 30, md: 45 } }}>
+            <Typography variant="h1" sx={{ textAlign: 'left', ml: -1, mt: 8, mb: 8, fontSize: { xs: 30, md: 45 } }}>
               Software Development
             </Typography>
 
@@ -164,13 +166,13 @@ const HomeTechStack: FC = () => {
               {data.reverse().map((item, index) =>
 
                 (localStorage && localStorage.getItem('theme') == item.myMode) && (
-                  <Grid item xs={12} md={3} spacing = {2} justifyContent='center' alignItems='center'
+                  <Grid item xs={12} md={3} spacing={2} justifyContent='center' alignItems='center'
                     sx={{
-                      padding : '0px',
+                      padding: '0px',
                       cursor: 'pointer',
                       textAlign: 'center',
-                      outline : '2px solid white',
-                      outlineOffset : '-10px',
+                      outline: '2px solid white',
+                      outlineOffset: '-10px',
                       '&:hover': {
                         transform: 'scale(1.05)',
                         transition: 'all 1s',
@@ -186,17 +188,19 @@ const HomeTechStack: FC = () => {
             <Button sx={{
               background: 'white',
               borderRadius: '10px',
-              width : '250px',
+              width: '250px',
               height: '60px',
               boxShadow: '0px 1px gray',
-              mt : 8,              
-              ml : -1,
+              mt: 8,
+              ml: -1,
               // '&:hover' : {
               //   background: 'white',
               // },
-              letterSpacing : '3px',
-              fontWeight : 'bold',
-              fontSize : '20px',
+              letterSpacing: '3px',
+              fontWeight: 'bold',
+              fontSize: '20px',
+              textTransform: 'none',
+
             }}
               size="large" variant="outlined" >
               See More

@@ -108,6 +108,7 @@ const HomeHero: FC = () => {
 
                     <Button sx={{
                       background: 'primary.main',
+                      textTransform: 'none',
                       borderRadius: '10px',
                       height: '60px',
                       '&:hover': {
@@ -119,10 +120,12 @@ const HomeHero: FC = () => {
                       size="large" variant="contained" startIcon={<TelegramIcon />}>
                       Get in touch
                     </Button>
+
                   </ScrollLink>
 
                   <Button sx={{
                     background: 'white',
+                    textTransform: 'none',
                     borderRadius: '10px',
                     height: '60px',
                     boxShadow: '0px 1px gray',
