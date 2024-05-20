@@ -8,6 +8,7 @@ import { useRouter } from 'next/router';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import PopupState, { bindTrigger, bindMenu } from 'material-ui-popup-state';
+import NextLink from 'next/link';
 
 
 import MyMenu from './haha';
@@ -23,41 +24,42 @@ const Navigation: FC = () => {
 
 
         {before_services.map(({ path: destination, label }) => (
-          <Box
-            component={Link}
+          <NextLink
             href={destination}
-            key={destination}
-            // target="_blank"
-            sx={{
-              position: 'relative',
-              color: '#ffffff',
-              cursor: 'pointer',
-              fontWeight: 600,
-              display: 'inline-flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              px: { xs: 0, md: 3 },
-              mb: { xs: 3, md: 0 },
-              textDecoration: 'none',
-              fontSize: { xs: '1.2rem', md: 'inherit' },
-              ...(destination === currentPath && {
-                textDecoration: 'underline',
-                textUnderlineOffset: '10px',
-              }),
+            key={destination}>
+            <Box
+              // target="_blank"
+              sx={{
+                position: 'relative',
+                color: '#ffffff',
+                cursor: 'pointer',
+                fontWeight: 600,
+                display: 'inline-flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                px: { xs: 0, md: 3 },
+                mb: { xs: 3, md: 0 },
+                textDecoration: 'none',
+                fontSize: { xs: '1.2rem', md: 'inherit' },
+                ...(destination === currentPath && {
+                  textDecoration: 'underline',
+                  textUnderlineOffset: '10px',
+                }),
 
-              '& > div': { display: 'none' },
-              '&.current>div': { display: 'block' },
-              '&:hover': {
-                '&>div': {
-                  display: 'block',
+                '& > div': { display: 'none' },
+                '&.current>div': { display: 'block' },
+                '&:hover': {
+                  '&>div': {
+                    display: 'block',
+                  },
+                  textDecoration: 'underline',
+                  textUnderlineOffset: '10px',
                 },
-                textDecoration: 'underline',
-                textUnderlineOffset: '10px',
-              },
-            }}
-          >
-            {label}
-          </Box>
+              }}
+            >
+              {label}
+            </Box>
+          </NextLink>
         ))}
 
         <Box sx={{
@@ -70,41 +72,44 @@ const Navigation: FC = () => {
         </Box>
 
         {navigations.map(({ path: destination, label }) => (
-          <Box
-            component={Link}
+          <NextLink
             href={destination}
-            key={destination}
-            // target="_blank"
-            sx={{
-              position: 'relative',
-              color: '#ffffff',
-              cursor: 'pointer',
-              fontWeight: 600,
-              display: 'inline-flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              px: { xs: 0, md: 3 },
-              mb: { xs: 3, md: 0 },
-              textDecoration: 'none',
-              fontSize: { xs: '1.2rem', md: 'inherit' },
-              ...(destination === currentPath && {
-                textDecoration: 'underline',
-                textUnderlineOffset: '10px',
-              }),
+            key={destination}>
+            <Box
+              component={Link}
 
-              '& > div': { display: 'none' },
-              '&.current>div': { display: 'block' },
-              '&:hover': {
-                '&>div': {
-                  display: 'block',
+              // target="_blank"
+              sx={{
+                position: 'relative',
+                color: '#ffffff',
+                cursor: 'pointer',
+                fontWeight: 600,
+                display: 'inline-flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                px: { xs: 0, md: 3 },
+                mb: { xs: 3, md: 0 },
+                textDecoration: 'none',
+                fontSize: { xs: '1.2rem', md: 'inherit' },
+                ...(destination === currentPath && {
+                  textDecoration: 'underline',
+                  textUnderlineOffset: '10px',
+                }),
+
+                '& > div': { display: 'none' },
+                '&.current>div': { display: 'block' },
+                '&:hover': {
+                  '&>div': {
+                    display: 'block',
+                  },
+                  textDecoration: 'underline',
+                  textUnderlineOffset: '10px',
                 },
-                textDecoration: 'underline',
-                textUnderlineOffset: '10px',
-              },
-            }}
-          >
-            {label}
-          </Box>
+              }}
+            >
+              {label}
+            </Box>
+          </NextLink>
         ))}
 
       </Box>
