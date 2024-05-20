@@ -13,8 +13,6 @@ import PlayArrowIcon from '@mui/icons-material/PlayArrow'
 import TelegramIcon from '@mui/icons-material/Telegram';
 import PhoneIcon from '@mui/icons-material/Phone';
 
-import MyVideo from '@/components/myvideo'
-
 interface Exp {
   label: string
   value: string
@@ -94,13 +92,13 @@ const AboutUs: FC = () => {
                     }}
                   >
 
-                    About Us
+                    Portfolio
                   </Typography>
                 </Box>
                 <Box sx={{ mt: 4, mb: 4, width: { xs: '100%', md: '90%' } }}>
-                  <Typography sx={{ color: 'text.secondary', lineHeight: 1.4, fontSize: '26px' }}>
+                  <Typography sx={{ color: 'text.secondary', lineHeight: 1.4, fontSize: '20px' }}>
                     {
-                      "Solicy is a fast-growing company providing Blockchain and Software solutions to customers all over the world. We have built over 100+ trustworthy projects, each magnifying the innovation environment. We work collaboratively and offer solutions of the highest standards: unmatched customer service and expert technical support. We care deeply about the people we serve. Nothing gives us greater pride than seeing our clients delighted with the work we’ve done."
+                      "We prioritize the needs of our clients and offer sustainable, transparent, and highly effective collaboration prospects. Let’s explore our portfolio for a closer look."
                     }
                   </Typography>
                 </Box>
@@ -109,20 +107,12 @@ const AboutUs: FC = () => {
             </Grid>
             <Grid item xs={12} md={4} sx={{ position: 'relative' }}>
               <Box sx={{ lineHeight: 0 }}>
-                <Image src="/images/aboutus/aboutus.svg" width={800} height={800} alt="Hero img" />
+                <Image src="/images/portfolio/aboutus.svg" width={800} height={800} alt="Hero img" />
               </Box>
             </Grid>
           </Grid>
 
 
-
-          <Grid item>
-            <MyVideo
-              videoSrc="https://ik.imagekit.io/2zlgs27bjo/public/about-video.mp4"
-              title = ""
-              description= ""
-            ></MyVideo>
-          </Grid>
 
         </Container>
       </Box>

@@ -14,8 +14,8 @@ export const navigations: Navigation[] = [
     path: '/Services', 
   },
   {
-    label: 'Portfollio',
-    path: '/Portfollio', 
+    label: 'Portfolio',
+    path: '/Portfolio', 
   },
   {
     label: 'Careers',
