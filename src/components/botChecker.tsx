@@ -2,16 +2,18 @@ import ReCAPTCHA, { ReCAPTCHAProps } from "react-google-recaptcha"
 import { useRef } from "react"
 
 const MyBot: React.FC = () => {
-  const recaptchaRef = useRef<ReCAPTCHAInstance>(null)
+  // const recaptchaRef = useRef<ReCAPTCHAInstance>(null)
+  const recaptchaRef = useRef(null)
 
-  const onChange = (value: string | null) => {
+  const onChange = (value: string | null):void => {
     console.log("Captcha value:", value)
   }
 
-  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = (event: React.FormEvent<HTMLFormElement>):void => {
     event.preventDefault()
-    const token = await recaptchaRef.current?.executeAsync()
-    console.log("reCAPTCHA token:", token)
+    // const token = await recaptchaRef.current;
+    // ?.executeAsync()
+    console.log("reCAPTCHA token:", "Dong")
     // Send the token to the backend for verification
   }
 

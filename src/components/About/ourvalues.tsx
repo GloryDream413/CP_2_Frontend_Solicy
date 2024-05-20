@@ -138,8 +138,8 @@ const HomeOurValues: FC = () => {
           <Grid item>
             <Typography variant="h5" sx={{ my: 1, fontWeight: '200', fontSize: { xs: 14, md: 20 } }}>
               Oh, we enjoy our work; every second of it brings
-              us joy. Perhaps that’s why we are good at what we
-              do. Too many times we pray for ease, but there's a prayer seldom met.
+              us joy. Perhaps that&apos;s why we are good at what we
+              do. Too many times we pray for ease, but there&apos;s a prayer seldom met.
             </Typography>
           </Grid>
         </Grid>
@@ -179,7 +179,7 @@ const HomeOurValues: FC = () => {
             <Typography variant="h5" sx={{ my: 1, fontWeight: '200', fontSize: { xs: 14, md: 20 } }}>
               We care about people: not just our clients, but all
               of the stakeholders a project might have. We put
-              people's safety and well-being first. Our priority
+              people safety and well-being first. Our priority
               for those individuals is unprecedented.
             </Typography>
           </Grid>

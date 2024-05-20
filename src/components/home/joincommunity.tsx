@@ -49,7 +49,7 @@ const HomePopularCourse: FC = () => {
         <Grid item container direction='column' xs={12} md={6} >
           <Grid item sx={{ mb: 4 }}>
             <Typography sx={{ color: 'text.secondary', lineHeight: 1.6, fontSize: '18px' }}>
-              Our social networks are for everyone who wants to be a part of the future, so don't hesitate about joining us!
+              Our social networks are for everyone who wants to be a part of the future, so don-t hesitate about joining us!
             </Typography>
           </Grid>
 

@@ -90,7 +90,7 @@ const FooterNavigation: FC = () => {
 
         <Grid container direction="row">
           {courseMenu.map(({ label, path }, index) => (
-            <Grid item xs={12} md={4} sx={{ mb: 1 }}>
+            <Grid item xs={12} md={4} sx={{ mb: 1 }} key = {index+path}>
               <NavigationItem key={index + path} label={label} path={/* path */ '#'} />
             </Grid>
           ))}
