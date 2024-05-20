@@ -1,6 +1,6 @@
 import type { Navigation } from '@/interfaces/navigation'
 
-export const navigations: Navigation[] = [
+export const before_services: Navigation[] = [
   {
     label: 'Home',
     path: '/', 
@@ -9,10 +9,10 @@ export const navigations: Navigation[] = [
     label: 'About',
     path: '/About', 
   },
-  {
-    label: 'Services',
-    path: '/Services', 
-  },
+]
+
+
+export const navigations: Navigation[] = [
   {
     label: 'Portfolio',
     path: '/Portfolio', 
