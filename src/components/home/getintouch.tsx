@@ -117,7 +117,7 @@ const HomeGetInTouch: FC = () => {
                 <FormControlLabel control={<Checkbox />} label="Other" />
               </Grid>
 
-              <Grid item xs={12} md={6} sx={{ mt: 3, mb: 2, fontSize: '20px', background: 'white', border: '2px solid gray' }}>
+              <Grid item xs={12} md={6} sx={{ mt: 3, mb: 2, fontSize: '20px', background: 'white', }}>
                 {/* <FormControlLabel sx={{ color: 'black' }} control={<Checkbox sx={{ border: '2px solid red' }} />} label="I am not a robot" /> */}
                 <MyBot></MyBot>
               </Grid>
@@ -163,7 +163,7 @@ const HomeGetInTouch: FC = () => {
 
             <Grid container direction="row" alignItems='center' sx={{ mt: 8 }}>
               <MailOutlineOutlinedIcon></MailOutlineOutlinedIcon>
-              <Typography sx={{ ml: 2, mr: 1, color: 'text.secondary', lineHeight: 1.6, fontSize: '18px', letterSpacing: '2px', textDecoration: 'underline' }}>
+              <Typography sx={{ ml: 2, mr: 1, color: 'text.secondary', lineHeight: 1.6, fontSize: '18px', textDecoration: 'underline' }}>
                 contact@solicy.net
               </Typography>
               <ContentCopyOutlinedIcon sx={{
