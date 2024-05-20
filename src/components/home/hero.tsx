@@ -46,7 +46,7 @@ const ExpItem: FC<ExpItemProps> = ({ item }) => {
   const { value, label } = item
   return (
     <>
-
+    
       <Box sx={{ width: '90%', textAlign: 'center', mb: { xs: 1, md: 0 } }} >
         <Typography
           sx={{ color: 'white', mb: { xs: 1, md: 2 }, fontSize: { xs: 40, md: 54 }, fontWeight: 'bold' }}
@@ -71,7 +71,6 @@ const HomeHero: FC = () => {
   return (
     <>
       <Box id="hero" sx={{ backgroundColor: 'background.paper', position: 'relative', pt: 24, pb: { xs: 16, md: 20 } }}>
-        <ChatDialogComponent />
         <Container maxWidth="lg">
 
           <Grid container spacing={0} sx={{ flexDirection: { xs: 'column', md: 'unset' } }}>

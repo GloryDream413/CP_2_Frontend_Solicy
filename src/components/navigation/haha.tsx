@@ -6,13 +6,15 @@ import Fade from '@mui/material/Fade';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import { Divider } from '@mui/material';
 
-export default function MyMenu() {
-  const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
+export default function MyMenu(): React.ReactElement {
+  const [anchorEl, setAnchorEl] = React.useState<HTMLElement | null>(null);
   const open = Boolean(anchorEl);
-  const handleClick = (event: React.MouseEvent<HTMLElement>) => {
+
+  const handleClick = (event: React.MouseEvent<HTMLElement>): void => {
     setAnchorEl(event.currentTarget);
   };
-  const handleClose = () => {
+
+  const handleClose = (): void => {
     setAnchorEl(null);
   };
 
@@ -36,11 +38,10 @@ export default function MyMenu() {
           mb: { xs: 3, md: 0 },
           textDecoration: 'none',
           fontSize: { xs: '1.2rem', md: 'inherit' },
-          
-          '&:hover' : {
-            textDecoration : 'underline',
+          '&:hover': {
+            textDecoration: 'underline',
             textUnderlineOffset: '10px',
-          }
+          },
         }}
         endIcon={<ArrowDropDownIcon />}
       >
@@ -57,21 +58,29 @@ export default function MyMenu() {
         TransitionComponent={Fade}
         sx={{ zIndex: '5000', ml: 3 }}
       >
-        <MenuItem onClick={handleClose}
+        <MenuItem
+          onClick={handleClose}
           sx={{
-            '&:hover' : {
-              textDecoration : 'underline',
-              textUnderlineOffset : '5px'
-            }
-          }}>Blockchain</MenuItem>
+            '&:hover': {
+              textDecoration: 'underline',
+              textUnderlineOffset: '5px',
+            },
+          }}
+        >
+          Blockchain
+        </MenuItem>
         <Divider />
-        <MenuItem onClick={handleClose}
+        <MenuItem
+          onClick={handleClose}
           sx={{
-            '&:hover' : {
-              textDecoration : 'underline',
-              textUnderlineOffset : '5px'
-            }
-          }}>Software</MenuItem>
+            '&:hover': {
+              textDecoration: 'underline',
+              textUnderlineOffset: '5px',
+            },
+          }}
+        >
+          Software
+        </MenuItem>
       </Menu>
     </div>
   );
